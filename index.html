@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Wikipedia web app
+    Demonstration project using HTML5, CSS3, Bootstrap, jQuery, JSON, AJAX
+
+    Gives user the option to search Wikipedia or get a random wikipedia page.
+
+    Mark Allen - Freelance Web Developer - 2017
+-->
+
+<html>
+<head>
+<!-- Load script, stylesheet, Bootstrap 3 and jQuery 3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <title>
+    Wikipedia tool
+  </title>
+</head>
+
+<body class="bg">
+    <div class="container">
+      <div class="row topOffset">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6 text-center">
+          <h1>Wikipedia viewer</h1>
+        </div>
+        <div class="col-xs-3"></div>
+      </div>
+      <div class="row offset">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6 text-center">
+          <input type="text" class="form-control" id="searchTerm" placeholder="Enter Wikipedia search term">
+          <button type="button" class="btn btn-primary buttonOffset" id="searchButton">Search Wikipedia</button>
+        </div>
+        <div class="col-xs-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6 text-center">
+          <a href="https://en.wikipedia.org/wiki/Special:Random"><h4>Or click here for a random Wikipedia subject</h4></a>
+        </div>
+        <div class="col-xs-3"></div>
+      </div>
+      <hr />
+      <div id="searchResults">
+      </div>
+      <div class="row" id="bottom">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6 text-center">
+          <h6>(c) 2017: <a href="https://markallenwebdeveloper.co.uk/" target="_blank">Mark Allen - Freelance Front-end Web Developer</a></h6>
+        </div>
+        <div class="col-xs-3"></div>
+      </div>
+    </div>
+</body>
+</html>
